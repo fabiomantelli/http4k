@@ -1,0 +1,223 @@
+/* Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "main-section"
+                         "documentation"
+                         "community"
+                         "developers"
+                         "footer";
+    grid-template-rows: 100px 1fr 1fr 0.5fr 1fr 1fr;
+    max-width: 100%;
+    background-image: url("./img/background.svg");
+    background-repeat: no-repeat;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.background {
+    background: url("./img/background.svg") no-repeat;
+}
+
+/* --- Header */
+.o-header {
+    display: grid;
+    grid-row: header;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+#nav-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    font-size: 12px;
+}
+
+.orange-button {
+    background: #FFA654;
+    border-radius: 5px;
+    width: 10vw;
+    height: 40px;
+    font-size: 12px;
+}
+
+.blue-button {
+    background: #60C0FF;
+    border-radius: 5px;
+    width: 10vw;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+/* --- Main Section */
+.main-section {
+    display: grid;
+    grid-row: main-section;
+    grid-template-rows: [main] 1fr [understand] 0.5fr [feature] 0.8fr;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-http {
+    display: grid;
+    grid-row: main;
+    grid-template-rows: 2fr 1fr 2fr;
+}
+
+.main-http h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main-http h2 {
+    font-size: 16px;
+}
+
+.understand-item {
+    display: grid;
+    grid-row: understand;
+    justify-items: left;
+}
+
+.font-normal {
+    font-size: 40px;
+}
+
+.features-items {
+    display: grid;
+    grid-row: feature;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.features-items h3 {
+    font-size: 24px;
+}
+
+.documentation {
+    display: grid;
+    grid-row: documentation;
+    grid-template-rows: [title] 1fr [items-documentation] 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-items: center;
+
+}
+
+.documentation h1 {
+    font-size: 40px;
+}
+
+.title-documentation {
+    display: grid;
+    grid-row: title;
+    justify-items: center;
+}
+
+.items-documentation {
+    display: grid;
+    grid-row: items-documentation;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* --- Community Section */
+.community {
+    display: grid;
+    grid-row: community;
+    grid-template-rows: [love-cont] 1fr [support-faq] 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.community h1 {
+    font-size: 40px;
+}
+
+.community h3 {
+    font-size: 16px;
+}
+
+.love-cont {
+    display: grid;
+    grid-row: love-cont;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.support-faq {
+    display: grid;
+    grid-row: support-faq;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+    background: #FFFFFF;
+    box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+}
+
+/* --- Developers Section */
+.developers {
+    display: grid;
+    grid-row: developers;
+    grid-template-rows: [title-dev] 1fr [text-dev] 1fr [code-dev] 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.developers h1 {
+    font-size: 40px;
+}
+
+.title-dev {
+    display: grid;
+    grid-row: title-dev;
+    justify-items: center;
+}
+
+.text-dev {
+    display: grid;
+    grid-row: text-dev;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.code-dev {
+    display: grid;
+    grid-row: code-dev;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+/* --- Footer */
+.o-footer {
+    display: grid;
+    grid-row: footer;
+    grid-template-columns: repeat(4, 1fr);
+    background: #60C0FF;
+    color: white;
+    padding: 20px;
+    justify-items: left;
+}
+
+.o-footer li {
+    display: flex;
+    font-size: 16px;
+}
