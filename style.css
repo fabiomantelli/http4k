@@ -73,7 +73,7 @@ a:link {
 .main-section {
     display: grid;
     grid-row: main-section;
-    grid-template-rows: [main] 1fr [understand] 0.5fr [feature] 0.8fr;
+    grid-template-rows: [main] auto [understand] auto [feature] auto;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
@@ -145,7 +145,7 @@ a:link {
 .documentation {
     display: grid;
     grid-row: documentation;
-    grid-template-rows: [title] 1fr [items-documentation] 1fr;
+    grid-template-rows: [title] auto [items-documentation] auto;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 100px;
@@ -203,7 +203,7 @@ a:link {
     display: grid;
     grid-row: community;
     grid-template-columns: [love-community] 1fr [contribuitors] 1fr;
-    grid-template-rows: [box1] 1fr [box2] 1fr;
+    grid-template-rows: [box1] auto [box2] auto;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 150px;
@@ -250,7 +250,7 @@ a:link {
 .developers {
     display: grid;
     grid-row: developers;
-    grid-template-rows: [title-dev] 1fr [text-dev] 1fr [code-dev] 1fr;
+    grid-template-rows: [title-dev] auto [text-dev] auto [code-dev] auto;
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;
@@ -266,7 +266,6 @@ a:link {
 .title-dev {
     display: grid;
     grid-row: title-dev;
-    justify-items: center;
 }
 
 .text-dev {
