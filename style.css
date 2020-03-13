@@ -15,7 +15,7 @@ body {
                          "community"
                          "developers"
                          "footer";
-    grid-template-rows: 100px 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
     max-width: 100%;
     background-image: url("./img/background.svg");
     background-repeat: no-repeat;
