@@ -220,10 +220,9 @@ a:link {
 
 .love-community {
     grid-column: love-community;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     align-self: center;
     justify-self: center;
-    padding: 0 20vw 0 1vw;
 }
 
 .love-community h3 {
