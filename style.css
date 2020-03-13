@@ -66,6 +66,7 @@ a:link {
     width: 10vw;
     height: 40px;
     font-size: 12px;
+    justify-self: center;
 }
 
 /* --- Main Section */
@@ -147,8 +148,11 @@ a:link {
     grid-template-rows: [title] 1fr [items-documentation] 1fr;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 100px;
     justify-items: center;
-
+    background: linear-gradient(60deg, transparent 100%, #fff 63%), 
+			linear-gradient(-2deg, transparent 95%, #fff 63%), 
+			linear-gradient(to bottom, #FBFBFB, #FBFBFB);
 }
 
 
@@ -159,23 +163,51 @@ a:link {
 .title-documentation {
     display: grid;
     grid-row: title;
-    justify-items: center;
+    text-align: center;
 }
 
 .items-documentation {
     display: grid;
     grid-row: items-documentation;
     grid-template-columns: repeat(2, 1fr);
+    background: #FFFFFF;
+    /* Drop Shadow */
+    box-shadow: 0px 6.06309px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
 }
 
+.items-documentation div:nth-child(1) {
+    padding: 20px;
+    align-self: center;
+}
+
+.items-documentation div:nth-child(2) {
+    padding: 20px;
+    align-self: center;
+}
+
+.items-documentation h1 {
+    font-size: 40px;
+}
+
+.items-documentation h2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
 
 /* --- Community Section */
 .community {
     display: grid;
     grid-row: community;
-    grid-template-rows: [love-cont] 1fr [support-faq] 1fr;
+    grid-template-columns: [love-community] 1fr [contribuitors] 1fr;
+    grid-template-rows: [box1] 1fr [box2] 1fr;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 150px;
+    gap: 30px;
 }
 
 .community h1 {
@@ -186,22 +218,32 @@ a:link {
     font-size: 16px;
 }
 
-.love-cont {
-    display: grid;
-    grid-row: love-cont;
-    grid-template-columns: repeat(2, 1fr);
+.love-community {
+    grid-column: love-community;
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
-.support-faq {
-    display: grid;
-    grid-row: support-faq;
-    grid-template-columns: repeat(2, 1fr);
+.contribuitors {
+    grid-column: contribuitors;
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
-.box {
+.box1 {
     background: #FFFFFF;
     box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
+    padding: 50px;
+}
+
+.box2 {
+    background: #FFFFFF;
+    box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    padding: 50px;
 }
 
 /* --- Developers Section */
@@ -212,6 +254,9 @@ a:link {
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;
+    background-image: url("./img/background-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .developers h1 {
@@ -228,6 +273,7 @@ a:link {
     display: grid;
     grid-row: text-dev;
     grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
 }
 
 .code-dev {
