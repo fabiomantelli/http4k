@@ -223,6 +223,11 @@ a:link {
     padding: 20px;
     align-self: center;
     justify-self: center;
+    padding: 0 20vw 0 1vw;
+}
+
+.love-community h3 {
+    padding-bottom: 2vh;
 }
 
 .contribuitors {
@@ -232,25 +237,42 @@ a:link {
     justify-self: center;
 }
 
+#gray-line {
+    width: 80%;
+    border-top: 2px solid #C4C4C4;
+    margin-left: 0;
+}
+
 .box1 {
     background: #FFFFFF;
     box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px 100px 20px 100px;
+}
+
+.box1 h4 {
+    font-size: 18px;
+    text-align: right;
 }
 
 .box2 {
     background: #FFFFFF;
     box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px 100px 20px 100px;
 }
+
+.box2 h4 {
+    font-size: 18px;
+    text-align: right;
+}
+
 
 /* --- Developers Section */
 .developers {
     display: grid;
     grid-row: developers;
-    grid-template-rows: [title-dev] auto [text-dev] auto [code-dev] auto;
+    grid-template-rows: auto [text-dev] auto [code-dev] auto;
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;
@@ -261,18 +283,20 @@ a:link {
 
 .developers h1 {
     font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
 }
 
-.title-dev {
-    display: grid;
-    grid-row: title-dev;
-}
 
 .text-dev {
     display: grid;
     grid-row: text-dev;
     grid-template-columns: repeat(2, 1fr);
-    padding: 30px;
+    
+}
+
+.text-dev h3 {
+    padding: 50px 50px 50px 100px;
 }
 
 .code-dev {
@@ -289,11 +313,30 @@ a:link {
     grid-template-columns: repeat(4, 1fr);
     background: #60C0FF;
     color: white;
-    padding: 20px;
-    justify-items: left;
+}
+
+.o-footer div:nth-child(1) {
+    padding: 50px;
+}
+
+.o-footer ul {
+    text-align: left;
+    margin: 0em;
 }
 
 .o-footer li {
     display: flex;
+    flex-direction: column;
     font-size: 16px;
 }
+
+.o-footer h1 {
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 53px;
+}
+
+.o-footer h3 {
+    padding-top: 20px;
+}
+
