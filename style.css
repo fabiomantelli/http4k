@@ -33,7 +33,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #nav-main {
@@ -45,6 +45,11 @@ h3 {
 li {
     display: inline;
     font-size: 12px;
+    padding: 15px;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .orange-button {
@@ -63,7 +68,6 @@ li {
     font-size: 12px;
 }
 
-
 /* --- Main Section */
 .main-section {
     display: grid;
@@ -71,6 +75,7 @@ li {
     grid-template-rows: [main] 1fr [understand] 0.5fr [feature] 0.8fr;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 50px;
 }
 
 .main-http {
@@ -108,6 +113,34 @@ li {
     font-size: 24px;
 }
 
+.features-box {
+    padding: 50px;
+}
+
+#blue-line {
+    width: 20%;
+    border-top: 2px solid #75D6FF;
+    margin-left: 0;
+}
+
+#purple-line {
+    width: 20%;
+    border-top: 2px solid #BD9EFF;
+    margin-left: 0;
+}
+
+#orange-line {
+    width: 20%;
+    border-top: 2px solid #FFA654;
+    margin-left: 0;
+}
+
+#green-line {
+    width: 20%;
+    border-top: 2px solid #B2FFA6;
+    margin-left: 0;
+}
+
 .documentation {
     display: grid;
     grid-row: documentation;
@@ -117,6 +150,7 @@ li {
     justify-items: center;
 
 }
+
 
 .documentation h1 {
     font-size: 40px;
