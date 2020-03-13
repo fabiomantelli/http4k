@@ -55,6 +55,7 @@ a:link {
 
 .orange-button {
     background: #FFA654;
+    color: white;
     border-radius: 5px;
     width: 10vw;
     height: 40px;
@@ -63,6 +64,7 @@ a:link {
 
 .blue-button {
     background: #60C0FF;
+    color: white;
     border-radius: 5px;
     width: 10vw;
     height: 40px;
@@ -277,6 +279,7 @@ a:link {
     padding-right: 50px;
     align-items: center;
     background-image: url("./img/background-bottom.svg");
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -304,6 +307,10 @@ a:link {
     grid-row: code-dev;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+}
+
+.developers div:nth-child(4) {
+    height: 300px;
 }
 
 /* --- Footer */
