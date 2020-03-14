@@ -20,10 +20,11 @@ body {
     background-image: url("./img/background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-size: 16px;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 /* --- Header */
@@ -45,7 +46,7 @@ h3 {
 
 li {
     display: inline;
-    font-size: 12px;
+    font-size: 0.75em;
     padding: 15px;
 }
 
@@ -59,7 +60,7 @@ a:link {
     border-radius: 5px;
     width: 10vw;
     height: 40px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .blue-button {
@@ -68,7 +69,7 @@ a:link {
     border-radius: 5px;
     width: 10vw;
     height: 40px;
-    font-size: 12px;
+    font-size: 0.75em;
     justify-self: center;
 }
 
@@ -89,12 +90,12 @@ a:link {
 }
 
 .main-http h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
 .main-http h2 {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .understand-item {
@@ -103,8 +104,9 @@ a:link {
     justify-items: left;
 }
 
-.font-normal {
-    font-size: 40px;
+.understand-item h1 {
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 .features-items {
@@ -113,12 +115,13 @@ a:link {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.features-items h3 {
-    font-size: 24px;
-}
-
 .features-box {
     padding: 50px;
+}
+
+.features-box h3 {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 #blue-line {
@@ -160,7 +163,15 @@ a:link {
 
 
 .documentation h1 {
-    font-size: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+
+.documentation h2 {
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .title-documentation {
@@ -182,6 +193,16 @@ a:link {
     bottom: -80px;
 }
 
+.itens-documentation h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.items-documentation h2 {
+    font-size: 1.125em;
+    padding-bottom: 15px;
+}
+
 .items-documentation div:nth-child(1) {
     padding: 20px;
     align-self: center;
@@ -192,21 +213,12 @@ a:link {
     align-self: center;
 }
 
-.items-documentation h1 {
-    font-size: 40px;
-}
-
-.items-documentation h2 {
-    font-size: 18px;
-    padding-bottom: 15px;
-}
-
 /* --- Community Section */
 .community {
     display: grid;
     grid-row: community;
     grid-template-columns: [love-community] 1fr [contribuitors] 1fr;
-    grid-template-rows: [box1] auto [box2] auto;
+    grid-template-rows: auto auto;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 150px;
@@ -214,22 +226,19 @@ a:link {
 }
 
 .community h1 {
-    font-size: 40px;
-}
-
-.community h3 {
-    font-size: 16px;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 .love-community {
     grid-column: love-community;
-    padding: 20px 20px 20px 0;
+    padding-right: 50%;
     align-self: center;
     justify-self: center;
 }
 
 .love-community h3 {
-    padding-bottom: 2vh;
+    padding: 5% 0 5% 0;
 }
 
 .contribuitors {
@@ -239,34 +248,28 @@ a:link {
     justify-self: center;
 }
 
+.contribuitors h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
 #gray-line {
     width: 80%;
     border-top: 2px solid #C4C4C4;
     margin-left: 0;
 }
 
-.box1 {
+.box {
     background: #FFFFFF;
     box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
     padding: 20px 100px 20px 100px;
 }
 
-.box1 h4 {
-    font-size: 18px;
-    text-align: right;
-}
-
-.box2 {
-    background: #FFFFFF;
-    box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
-    border-radius: 20px;
-    padding: 20px 100px 20px 100px;
-}
-
-.box2 h4 {
-    font-size: 18px;
-    text-align: right;
+.box a {
+    font-size: 1.125em;
+    font-weight: 700;
+    float: right;
 }
 
 
@@ -285,7 +288,8 @@ a:link {
 }
 
 .developers h1 {
-    font-size: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
     text-align: center;
     padding-top: 50px;
 }
@@ -334,13 +338,14 @@ a:link {
 .o-footer li {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
 }
 
 .o-footer h1 {
     padding-top: 20px;
     text-align: left;
     padding-left: 53px;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .o-footer h3 {
