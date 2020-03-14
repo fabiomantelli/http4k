@@ -324,11 +324,9 @@ a:link {
     grid-template-columns: repeat(4, 1fr);
     background: #60C0FF;
     color: white;
+    padding: 30px;
 }
 
-.o-footer div:nth-child(1) {
-    padding: 50px;
-}
 
 .o-footer ul {
     text-align: left;
@@ -341,7 +339,6 @@ a:link {
 }
 
 .o-footer h1 {
-    padding-top: 20px;
     text-align: left;
     padding-left: 53px;
     font-size: 1.5em;
@@ -351,4 +348,3 @@ a:link {
 .o-footer h3 {
     padding-top: 20px;
 }
-
