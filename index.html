@@ -12,12 +12,16 @@
 <body>
 
     <header class="o-header"> <!-- header -->
-        <a href="#">
-            <img src="./img/http4k-logo.svg" alt="http4-logo">
-        </a>
+        <div class="logo">
+            <a href="#">
+                <img src="./img/http4k-logo.svg" alt="http4-logo">
+            </a>
+        </div>
         
-        <div id="nav-main">
-            <nav>
+        <div class="nav-main">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <nav class="nav">
                 <ul>
                     <li><a href="#">Documentation</a></li>
                     <li><a href="#">Tutorials</a></li>
@@ -26,7 +30,7 @@
                     <li><a href="#">See us on GitHub</a></li>
                 </ul>  
             </nav>
-
+            
             <button class="orange-button">Quick Start</button>
         </div>
     </header> <!-- endheader -->
