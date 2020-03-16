@@ -31,15 +31,15 @@ h3 {
 .o-header {
     display: grid;
     grid-row: header;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 1fr;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
 }
 
 .nav-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-self: right;
 }
