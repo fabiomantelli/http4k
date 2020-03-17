@@ -378,7 +378,7 @@ a:link {
 
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .section-box {
         width: 100vmin;
     }
