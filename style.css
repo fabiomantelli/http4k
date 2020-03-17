@@ -13,10 +13,10 @@ body {
                          "main-section"
                          "documentation"
                          "community"
+                         "section-box"
                          "developers"
                          "footer";
     grid-template-rows: auto auto auto auto auto auto;
-    max-width: 100%;
     background-image: url("./img/background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -31,7 +31,7 @@ h3 {
 .o-header {
     display: grid;
     grid-row: header;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
@@ -168,7 +168,6 @@ label {
    
 }
 
-
 .features-box {
     padding: 50px;
 }
@@ -216,9 +215,6 @@ label {
     display: grid;
     grid-row: documentation;
     grid-template-rows: [title] auto [items-documentation] auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
     justify-items: center;
     background: linear-gradient(60deg, transparent 100%, #fff 63%), 
 			linear-gradient(-2deg, transparent 95%, #fff 63%), 
@@ -234,20 +230,19 @@ label {
 
 .documentation h2 {
     font-size: 1.5em;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .title-documentation {
     display: grid;
     grid-row: title;
     text-align: center;
+    width: 50vw;
 }
 
 .items-documentation {
     display: grid;
     grid-row: items-documentation;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0,1fr) minmax(0, 2fr);
     background: #FFFFFF;
     /* Drop Shadow */
     box-shadow: 0px 6.06309px 20px rgba(0, 0, 0, 0.08);
@@ -273,6 +268,7 @@ label {
 }
 
 .items-documentation div:nth-child(2) {
+    display: flex;
     padding: 20px;
     align-self: center;
 }
@@ -281,8 +277,8 @@ label {
 .community {
     display: grid;
     grid-row: community;
-    grid-template-columns: [love-community] 1fr [contribuitors] 1fr;
-    grid-template-rows: auto auto;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: repeat( auto-fit, minmax(380px, 1fr) );
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 150px;
@@ -295,8 +291,6 @@ label {
 }
 
 .love-community {
-    grid-column: love-community;
-    padding-right: 50%;
     align-self: center;
     justify-self: center;
 }
@@ -306,7 +300,6 @@ label {
 }
 
 .contribuitors {
-    grid-column: contribuitors;
     padding: 20px;
     align-self: center;
     justify-self: center;
@@ -323,11 +316,19 @@ label {
     margin-left: 0;
 }
 
+
+/* Section-box */
+.section-box {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(430px, max-content) );
+}
+
 .box {
     background: #FFFFFF;
     box-shadow: 0px 7.28173px 36.4087px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
-    padding: 20px 100px 20px 100px;
+    padding: 20px;
+    margin: 50px;
 }
 
 .box a {
@@ -335,6 +336,8 @@ label {
     font-weight: 700;
     float: right;
 }
+
+
 
 
 /* --- Developers Section */
@@ -373,8 +376,8 @@ label {
 .code-dev {
     display: grid;
     grid-row: code-dev;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(460px, max-content) );
+    justify-content: center;
 }
 
 .developers div:nth-child(4) {
