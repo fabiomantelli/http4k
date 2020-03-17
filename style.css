@@ -24,7 +24,7 @@ body {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* --- Header */
@@ -32,9 +32,9 @@ h3 {
     display: grid;
     grid-row: header;
     grid-template-columns: 1fr 3fr;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
 }
 
 .nav-main {
@@ -46,8 +46,8 @@ h3 {
 
 li {
     display: inline;
-    font-size: 0.75em;
-    padding: 15px;
+    font-size: 0.75rem;
+    padding: 1rem;
     clear: right;
 }
 
@@ -56,56 +56,14 @@ a:link {
     text-decoration: none;
 }
 
-label {
-    margin: 0 40px 0 0;
-    font-size: 3em;
-    line-height: 26px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-
-#toggle {
-    display: none;
-}
-
-@media only screen and (max-width: 500px) {
-    label {
-        display: block;
-        cursor: pointer;
-        width: 26px;
-        float: right;
-    }
-
-    .nav {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-
-    .nav a {
-        display: block;
-        border-bottom: 1px solid gray;
-        margin: 0;
-    }
-
-    #toggle:checked + nav {
-        display: block;
-    }
-
-    #nav-main button {
-        display: none;
-    }
-}
-
 .orange-button {
     background: #FFA654;
     color: white;
     border-radius: 5px;
     border: none;
-    width: 10vw;
-    height: 40px;
-    font-size: 0.75em;
+    width: 15vw;
+    height: 5vh;
+    font-size: 0.75rem;
     transition: background-color 0.5s ease;
 }
 
@@ -118,9 +76,9 @@ label {
     color: white;
     border-radius: 5px;
     border: none;
-    width: 10vw;
-    height: 40px;
-    font-size: 0.75em;
+    width: 15vw;
+    height: 5vh;
+    font-size: 0.75rem;
     justify-self: center;
 }
 
@@ -129,9 +87,7 @@ label {
     display: grid;
     grid-row: main-section;
     grid-template-rows: [main] auto [understand] auto [feature] auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding: 5rem;
 }
 
 .main-http {
@@ -141,12 +97,12 @@ label {
 }
 
 .main-http h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .main-http h2 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .understand-item {
@@ -156,7 +112,7 @@ label {
 }
 
 .understand-item h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -164,16 +120,15 @@ label {
     display: grid;
     grid-row: feature;
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .features-box {
-    padding: 50px;
+    padding: 1rem;
 }
 
 .features-box h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -214,52 +169,52 @@ label {
 .documentation {
     display: grid;
     grid-row: documentation;
-    grid-template-rows: [title] auto [items-documentation] auto;
-    justify-items: center;
+    grid-template-areas: "title"
+                         "items-documentation";
     background: linear-gradient(60deg, transparent 100%, #fff 63%), 
 			linear-gradient(-2deg, transparent 95%, #fff 63%), 
-			linear-gradient(to bottom, #FBFBFB, #FBFBFB);
+            linear-gradient(to bottom, #FBFBFB, #FBFBFB);
+    padding: 5rem;
 }
 
 
 .documentation h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 
 .documentation h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .title-documentation {
     display: grid;
     grid-row: title;
     text-align: center;
-    width: 50vw;
 }
 
 .items-documentation {
     display: grid;
     grid-row: items-documentation;
-    grid-template-columns: minmax(0,1fr) minmax(0, 2fr);
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     background: #FFFFFF;
     /* Drop Shadow */
     box-shadow: 0px 6.06309px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1rem;
+    padding: 1rem;
     position: relative;
-    bottom: -80px;
+    bottom: -10rem;
 }
 
 .itens-documentation h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .items-documentation h2 {
-    font-size: 1.125em;
-    padding-bottom: 15px;
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
 }
 
 .items-documentation div:nth-child(1) {
@@ -278,7 +233,7 @@ label {
     display: grid;
     grid-row: community;
     /*grid-template-columns: repeat(2, 1fr);*/
-    grid-template-columns: repeat( auto-fit, minmax(380px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(19rem, 1fr) );
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 150px;
@@ -286,7 +241,7 @@ label {
 }
 
 .community h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -306,7 +261,7 @@ label {
 }
 
 .contribuitors h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -320,8 +275,9 @@ label {
 /* Section-box */
 .section-box {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(430px, max-content) );
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr) );
 }
+
 
 .box {
     background: #FFFFFF;
@@ -332,7 +288,7 @@ label {
 }
 
 .box a {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 700;
     float: right;
 }
@@ -345,27 +301,28 @@ label {
     display: grid;
     grid-row: developers;
     grid-template-rows: auto [text-dev] auto [code-dev] auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 2rem;
     align-items: center;
     background-image: url("./img/background-bottom.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+    width: 100vmin;
 }
 
 .developers h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 
 .text-dev {
     display: grid;
     grid-row: text-dev;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr) );
+    text-align: left;
     
 }
 
@@ -376,12 +333,12 @@ label {
 .code-dev {
     display: grid;
     grid-row: code-dev;
-    grid-template-columns: repeat( auto-fit, minmax(460px, max-content) );
+    grid-template-columns: repeat( auto-fit, minmax(18rem, 1fr) );
     justify-content: center;
 }
 
 .developers div:nth-child(4) {
-    height: 300px;
+    height: 100px;
 }
 
 /* --- Footer */
@@ -397,7 +354,7 @@ label {
 
 .o-footer ul {
     text-align: left;
-    margin: 0em;
+    margin: 0rem;
 }
 
 .o-footer li {
@@ -408,7 +365,7 @@ label {
 .o-footer h1 {
     text-align: left;
     padding-left: 53px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -416,3 +373,30 @@ label {
     padding-top: 20px;
 }
 
+
+
+@media (max-width: 600px) {
+    .section-box {
+        width: 100vmin;
+    }
+    
+    .contribuitors img {
+       width: 40vmin;
+    }
+
+    .nav-main {
+        display: none;
+    }
+
+    .documentation {
+        width: 100vmin;
+    }
+
+    .items-documentation #img3 {
+        display: none;
+    }
+    
+    .items-documentation #img4 {
+        display: none;
+    }
+}
