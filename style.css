@@ -21,7 +21,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 16px;
-    width: 100%;
 }
 
 h3 {
@@ -122,12 +121,6 @@ a:link {
     grid-row: feature;
     /*grid-template-columns: repeat(4, 1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    width: 100vmin;
-    padding: 1rem;
-}
-
-.features-box {
-    padding: 1rem;
 }
 
 .features-box h3 {
@@ -173,12 +166,9 @@ a:link {
     grid-row: documentation;
     grid-template-areas: "title"
                          "items-documentation";
-    background: linear-gradient(60deg, transparent 100%, #fff 63%), 
-			linear-gradient(-2deg, transparent 95%, #fff 63%), 
-            linear-gradient(to bottom, #FBFBFB, #FBFBFB);
+    
     padding: 2rem;
 }
-
 
 .documentation h1 {
     font-size: 2.5rem;
@@ -200,7 +190,7 @@ a:link {
 .items-documentation {
     display: grid;
     grid-row: items-documentation;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     background: #FFFFFF;
     /* Drop Shadow */
     box-shadow: 0px 6.06309px 20px rgba(0, 0, 0, 0.08);
@@ -236,7 +226,7 @@ a:link {
     display: grid;
     grid-row: community;
     /*grid-template-columns: repeat(2, 1fr);*/
-    grid-template-columns: repeat( auto-fit, minmax(19rem, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr) );
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 15rem;
@@ -251,7 +241,6 @@ a:link {
 .love-community {
     align-self: center;
     justify-self: center;
-    width: 100vmin;
 }
 
 .love-community h3 {
@@ -289,6 +278,7 @@ a:link {
     border-radius: 20px;
     padding: 1rem;
     margin: 3rem;
+    
 }
 
 .box a {
@@ -296,9 +286,6 @@ a:link {
     font-weight: 700;
     float: right;
 }
-
-
-
 
 /* --- Developers Section */
 .developers {
@@ -311,7 +298,6 @@ a:link {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100vmin;
 }
 
 .developers h1 {
@@ -378,32 +364,8 @@ a:link {
 }
 
 
-@media only screen and (max-width: 600px) {
-    .main-http {
-        font-size: 1.5rem;
-    }
-
-    .section-box {
-        width: 100vmin;
-    }
-    
-    .contribuitors img {
-       width: 40vmin;
-    }
-
+@media screen and (max-width: 600px) {
     .nav-main {
-        display: none;
-    }
-
-    .documentation {
-        width: 100vmin;
-    }
-
-    .items-documentation #img3 {
-        display: none;
-    }
-    
-    .items-documentation #img4 {
         display: none;
     }
 }
