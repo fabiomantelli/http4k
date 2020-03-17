@@ -19,8 +19,9 @@ body {
     grid-template-rows: auto auto auto auto auto auto;
     background-image: url("./img/background.svg");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
     font-size: 16px;
+    width: 100%;
 }
 
 h3 {
@@ -377,8 +378,7 @@ a:link {
 }
 
 
-
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .main-http {
         font-size: 1.5rem;
     }
