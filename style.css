@@ -8,6 +8,9 @@ body {
     font-size: 16px;
     margin: 0;
     height: auto;
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -15,16 +18,9 @@ img {
     width: 100%;
 }
 
-main {
-    margin: auto;
-    background: url("./img/background.svg");
-    background-position: initial;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 header {
-    background: linear-gradient(80.92deg, #59AFF5 32.66%, #60C0FF 91.08%);
+    background-image: url("./img/background.svg"), linear-gradient(80.92deg, #59AFF5 32.66%, #60C0FF 91.08%);
 }
 
 #nav-menu {
@@ -53,7 +49,6 @@ header {
 
 
 #landing-section {
-    background: linear-gradient(80.92deg, #59AFF5 32.66%, #60C0FF 91.08%);
     height: 70vh;
     width: 100%;
 }
@@ -87,6 +82,7 @@ header {
     border-radius: 5px;
     width: 8rem;
     height: 2rem;
+    border: none;
 }
 
 
@@ -190,6 +186,7 @@ header {
     width: 8rem;
     height: 2rem;
     color: white;
+    border: none;
 }
 
 #itens-integrations {
