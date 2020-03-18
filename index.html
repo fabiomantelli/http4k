@@ -10,201 +10,217 @@
 
 </head>
 <body>
-
     <header class="o-header"> <!-- header -->
-        <div class="logo">
+        <div id="nav-menu-mobile">
             <a href="#">
-                <img src="./img/http4k-logo.svg" alt="http4-logo">
+                <img src="./img/http4k-logo-white.svg" alt="http4-logo">
+            </a>
+    
+            <a href="#" id="nav-three">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
             </a>
         </div>
-        
-        <div class="nav-main">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">See us on GitHub</a></li>
-                </ul>  
-            </nav>
-            
-            <button class="orange-button">Quick Start</button>
-        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">See us on GitHub</a></li>
+            </ul>  
+            <button class="btn-orange">Quick Start</button>
+        </nav>
+
     </header> <!-- endheader -->
 
-    <section class="main-section"> <!-- main-section -->
-        <div class="main-http">
-            <h1>The lightweight </br>
-                HTTP toolkit for </br>
-                Kotlin applications</h1>
+    <main> <!-- main -->
+        <section id="landing-section"> <!-- main-section -->
+            <div id="landing-text"> <!-- landing-area -->
+                <div id="landing-text-inner">
+                    <h1>The lightweight 
+                        HTTP toolkit for
+                        Kotlin applications
+                    </h1>
+                    <h2>http4k provides a functional and consistent way
+                        to serve and consume HTTP services.
+                    </h2>
+                    <button class="btn-orange" id="quick-start">Quick Start</button>
+                </div>
+            </div> <!-- end-landing-area -->
 
-            <h2>http4k provides a functional and consistent way </br>
-                to serve and consume HTTP services.</h2>
-            <button class="orange-button">Quick Start</button>
-        </div>
-
-        <div class="understand-item">
-            <h1>Understand our </br>main features</h1>
-        </div>
-
-        <div class="features-items">
-            <div class="features-box box1">
-                <img src="./img/footprint_rectangle.svg" alt="footprint-rectangle">
-                <h3>
-                    Small </br>
-                    footprint
-                </h3>
-                <hr id="blue-line">
-                <h4>The core library has no other dependencies and it's enough to get started.</h4>
-            </div>
+        </section> <!-- end-landing-section -->
     
-            <div class="features-box box2">
-                <img src="./img/extendable_rectangle.svg" alt="extendable-rectangle">
-                <h3>
-                    Highly </br>
-                    extendable
-                </h3>
-                <hr id="purple-line">
-                <h4>
-                    Template engines, rendering formats, operability and resilience features
-                    testing tools... http4k provides 30+ integrations for developers to choose from.
-                </h4>
+        <section class="understand-section"> <!-- understand-section -->
+            <div id="understand-text">
+                <h1>Understand our </br>main features</h1>
             </div>
-    
-            <div class="features-box box3">
-                <img src="./img/testability_rectangle.svg" alt="testability-rectangle">
-                <h3>
-                    Testability as a </br>
-                    design principle
-                </h3>
-                <hr id="orange-line">
-                <h4>
-                    Testing can be done in-memory without actual running servers or network communication.
-                    Various approaches such as Approval and Chaos testing are also supported.
-                </h4>
-            </div>
-    
-            <div class="features-box box4">
-                <img src="./img/supportive_rectangle.svg" alt="supportive-rectangle">
-                <h3>
-                    Supportive </br>
-                    community
-                </h3>
-                <hr id="green-line">
-                <h4>
-                    The core library has no other dependencies and it's enough to get started.
-                </h4>
-            </div>
-        </div>
-    </section> <!-- endmain-section -->
-
-    <section class="documentation">
-        <div class="title-documentation">
-            <h1>See our documentation</h1>
-            <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
-                Porttitor erat est neque lorem nunc.
-            </h2>
-            <button class="blue-button">Quick Start</button>
-        </div>
-
-        <div class="items-documentation">
-            <div>
-                <h1>
-                    More than 30 </br>
-                    integrations
-                </h1>
-                <h2>
-                    Our API integrates with </br>
-                    the most popular tools,</br>
-                    check it out.
-                </h2>
-                <button class="blue-button">See integrations</button>
-            </div>
-
-            <div>
-               <!---- <img src="./img/group-logos/group-logos-1.svg" alt="logo-list-1" id="img1">
-                <img src="./img/group-logos/group-logos-2.svg" alt="logo-list-2" id="img2">
-                <img src="./img/group-logos/group-logos-3.svg" alt="logo-list-3" id="img3">
-                <img src="./img/group-logos/group-logos-4.svg" alt="logo-list-4" id="img4"> -->
-            </div>
-        </div>
-    </section> <!-- enddocumentation -->
-
-    <section class="community"> <!-- community -->
-        
-        <div class="love-community">
-            <h1>
-                We love our </br>
-                community</h1>
-            <h3>
-                Sint fugiat dolore tempor ex elit pariatur fugiat ut consequat. In fugiat laboris amet ex commodo pariatur eu laboris velit fugiat aute velit duis. Labore quis cillum incididunt et proident labore quis aute.
-            </h3>
-            <button class="blue-button">Contribute</button>
-        </div>
-
-        <div class="contribuitors">
-            <h1>Our Contribuitors</h1>
-            <hr id="gray-line">
-            <!-- <img src="./img/contribuitors.svg" alt="contribuitors"> -->
-        </div>
-        
-    </section> <!-- endcommunity -->
-
-    <section class="section-box"> <!-- section-box-->
-        <div class="box support-box">
-            <div class="box-img-text">
-                <img src="./img/support-icon.svg" alt="support-icon">
-                <h1>Support Us</h1>
-            </div>
-            <h3>
-                Sunt aliqua sint do et nulla et dolor do laboris proident. Dolore laboris aliqua occaecat qui excepteur Lorem sint sint in eiusmod do et do ipsum. Sunt excepteur duis tempor proident enim ea et cillum veniam. Consectetur ex consectetur excepteur nisi commodo voluptate officia anim deserunt culpa amet quis aliqua veniam.
-            </h3>
-            <a href="#">See more >></a>
-        </div>
-
-        <div class="box faq-box">
-            <div class="box-img-text">
-                <img src="./img/faq-icon.svg" alt="faq-icon">
-                <h1>F.A.Q</h1>
-            </div>
-            <h3>
-                Qui velit tempor qui consequat sit cupidatat. Adipisicing officia culpa sunt nisi qui ad eiusmod proident aute veniam. Incididunt incididunt nostrud id est non laboris anim minim pariatur consequat enim laborum. Dolore excepteur pariatur ullamco ea commodo consectetur ex labore fugiat nulla minim ad. Amet nulla tempor duis tempor consequat do occaecat occaecat velit sunt duis.
-            </h3>
-            <a href="#">See more >></a>
-        </div>
-    </section> <!-- endsection-box -->
-
-    <section class="developers"> <!-- developers -->
-        <h1>Easy for developers</h1>
-        
-        <div class="text-dev">
-            <h3>
-                Pariatur proident nulla occaecat velit exercitation. Officia sit et eiusmod dolor magna est reprehenderit duis ullamco. Consequat duis labore aute dolor eu pariatur id irure exercitation do. Dolore reprehenderit ea pariatur tempor. Nostrud irure esse cillum cupidatat. Officia pariatur sit sunt amet ut proident ut aliquip in aute duis. Laboris amet fugiat cillum duis reprehenderit aute officia officia deserunt do ut laboris eu qui.
-            </h3>
-            <h3>
-                Pariatur proident nulla occaecat velit exercitation. Officia sit et eiusmod dolor magna est reprehenderit duis ullamco. Consequat duis labore aute dolor eu pariatur id irure exercitation do. Dolore reprehenderit ea pariatur tempor. Nostrud irure esse cillum cupidatat. Officia pariatur sit sunt amet ut proident ut aliquip in aute duis. Laboris amet fugiat cillum duis reprehenderit aute officia officia deserunt do ut laboris eu qui.
-            </h3>
-        </div>
-
-        <div class="code-dev">
-            <img src="./img/program1.svg" alt="">
-            <img src="./img/program1.svg" alt="">
-        </div>
-
-        <div>
             
-        </div>
-    </section> <!-- enddevelopers-->
+            <div id="features">
+                <div class="features-box" id="box1">
+                    <img src="./img/footprint_rectangle.svg" alt="footprint-rectangle">
+                    <h3>
+                        Small </br>
+                        footprint
+                    </h3>
+                    <hr id="blue-line">
+                    <h4>The core library has no other dependencies and it's enough to get started.</h4>
+                </div>
+        
+                <div class="features-box" id="box2">
+                    <img src="./img/extendable_rectangle.svg" alt="extendable-rectangle">
+                    <h3>
+                        Highly </br>
+                        extendable
+                    </h3>
+                    <hr id="purple-line">
+                    <h4>
+                        Template engines, rendering formats, operability and resilience features
+                        testing tools... http4k provides 30+ integrations for developers to choose from.
+                    </h4>
+                </div>
+        
+                <div class="features-box" id="box3">
+                    <img src="./img/testability_rectangle.svg" alt="testability-rectangle">
+                    <h3>
+                        Testability as a </br>
+                        design principle
+                    </h3>
+                    <hr id="orange-line">
+                    <h4>
+                        Testing can be done in-memory without actual running servers or network communication.
+                        Various approaches such as Approval and Chaos testing are also supported.
+                    </h4>
+                </div>
 
-    <footer class="o-footer"> <!-- o-footer -->
+                <div class="features-box" id="box4">
+                    <img src="./img/supportive_rectangle.svg" alt="supportive-rectangle">
+                    <h3>
+                        Supportive </br>
+                        community
+                    </h3>
+                    <hr id="green-line">
+                    <h4>
+                        The core library has no other dependencies and it's enough to get started.
+                    </h4>
+                </div>
+            </div>
+    
+            
+        </section> <!-- endunderstand-section -->
+    
+        <section class="documentation">
+            <div id="title-documentation">
+                <h1>See our documentation</h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
+                    Porttitor erat est neque lorem nunc.
+                </h2>
+                <button class="btn-blue">Quick Start</button>
+            </div>
+    
+        </section> <!-- enddocumentation -->
+
+        <section class="integrations">
+            <div id="itens-integrations">
+                <div id="text-integrations">
+                    <h1>
+                        More than 30 </br>
+                        integrations
+                    </h1>
+                    <h2>
+                        Our API integrates with </br>
+                        the most popular tools,</br>
+                        check it out.
+                    </h2>
+                    <button class="btn-blue">See Integrations</button>
+                </div>
+    
+                <div id="images-integration">
+                    <img src="./img/group-logos/group-logos-1.svg" alt="logo-list-1" id="img1">
+                    <img src="./img/group-logos/group-logos-2.svg" alt="logo-list-2" id="img2">
+                    <!-- <img src="./img/group-logos/group-logos-3.svg" alt="logo-list-3" id="img3">
+                    <img src="./img/group-logos/group-logos-4.svg" alt="logo-list-4" id="img4"> -->
+                </div>
+            </div>
+        </section>
+    
+        <section class="community"> <!-- community -->
+            
+            <div id="community-display">
+                <div id="love-community">
+                    <h1>
+                        We love our </br>
+                        community</h1>
+                    <h2>
+                        Sint fugiat dolore tempor ex elit pariatur fugiat ut consequat. In fugiat laboris amet ex commodo pariatur eu laboris velit fugiat aute velit duis. Labore quis cillum incididunt et proident labore quis aute.
+                    </h2>
+                    <button class="btn-blue">Contribute</button>
+                </div>
+        
+                <div id="contribuitors">
+                    <h1>Our Contribuitors</h1>
+                    <hr id="gray-line">
+                    <img src="./img/contribuitors.svg" alt="contribuitors">
+                </div>
+            </div>
+            
+        </section> <!-- endcommunity -->
+    
+        <section id="section-box"> <!-- section-box-->
+            <div id="support-box">
+                <div class="box-img-text">
+                    <img src="./img/support-icon.svg" alt="support-icon">
+                    <h1>Support Us</h1>
+                </div>
+                <h2>
+                    Sunt aliqua sint do et nulla et dolor do laboris proident. Dolore laboris aliqua occaecat qui excepteur Lorem sint sint in eiusmod do et do ipsum. Sunt excepteur duis tempor proident enim ea et cillum veniam. Consectetur ex consectetur excepteur nisi commodo voluptate officia anim deserunt culpa amet quis aliqua veniam.
+                </h2>
+                <a href="#">See more >></a>
+            </div>
+    
+            <div id="faq-box">
+                <div class="box-img-text">
+                    <img src="./img/faq-icon.svg" alt="faq-icon">
+                    <h1>F.A.Q</h1>
+                </div>
+                <h2>
+                    Qui velit tempor qui consequat sit cupidatat. Adipisicing officia culpa sunt nisi qui ad eiusmod proident aute veniam. Incididunt incididunt nostrud id est non laboris anim minim pariatur consequat enim laborum. Dolore excepteur pariatur ullamco ea commodo consectetur ex labore fugiat nulla minim ad. Amet nulla tempor duis tempor consequat do occaecat occaecat velit sunt duis.
+                </h2>
+                <a href="#">See more >></a>
+            </div>
+        </section> <!-- endsection-box -->
+    
+        <section id="developers"> <!-- developers -->
+            <h1>Easy for developers</h1>
+            
+            <h2>
+                Pariatur proident nulla occaecat velit exercitation. Officia sit et eiusmod dolor magna est reprehenderit duis ullamco. Consequat duis labore aute dolor eu pariatur id irure exercitation do. Dolore reprehenderit ea pariatur tempor. Nostrud irure esse cillum cupidatat. Officia pariatur sit sunt amet ut proident ut aliquip in aute duis. Laboris amet fugiat cillum duis reprehenderit aute officia officia deserunt do ut laboris eu qui.
+            </h2>
+        
+            <img src="./img/program1.svg" alt="programa1" id="programa1">
+            
+
+            <h2>
+                Pariatur proident nulla occaecat velit exercitation. Officia sit et eiusmod dolor magna est reprehenderit duis ullamco. Consequat duis labore aute dolor eu pariatur id irure exercitation do. Dolore reprehenderit ea pariatur tempor. Nostrud irure esse cillum cupidatat. Officia pariatur sit sunt amet ut proident ut aliquip in aute duis. Laboris amet fugiat cillum duis reprehenderit aute officia officia deserunt do ut laboris eu qui.
+            </h2>    
+
+            <img src="./img/program1.svg" alt="programa2" id="programa2">
+
+        </section> <!-- enddevelopers-->
+    </main> <!-- endmain -->
+
+    <footer id="o-footer"> <!-- o-footer -->
         <div>
-            <img src="./img/http4k-logo-white.svg" alt="http4k">
-            <h3>
-                Non aliqua do et do dolor irure. Nostrud Lorem aliquip dolor reprehenderit aliqua ad esse.
-                Non aliqua do et do dolor irure. Nostrud Lorem aliquip dolor reprehenderit aliqua ad esse.
-            </h3>
+            <a href="#">
+                <img src="./img/http4k-logo-white.svg" alt="http4-logo">
+            </a>
+
+            <h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor erat est neque lorem nunc. Ultrices purus ip
+            </h2>
         </div>
 
         <div>
