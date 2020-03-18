@@ -27,7 +27,7 @@ header {
 #test {
     border-top: 5vh solid transparent;
     border-right: 100vw solid transparent;
-    border-bottom: 10vh solid #FFFFFF;
+    border-bottom: 5vh solid #FFFFFF;
 }
 
 #nav-menu {
